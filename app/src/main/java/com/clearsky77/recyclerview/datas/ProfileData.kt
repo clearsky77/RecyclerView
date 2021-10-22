@@ -1,6 +1,6 @@
 package com.clearsky77.recyclerview.datas
 
-class profileData(
+class ProfileData(
     val gender: Int,
     val name: String,
     val age: Int,
