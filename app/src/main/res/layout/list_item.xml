@@ -41,7 +41,7 @@
             app:layout_constraintTop_toTopOf="@+id/profileImg" />
 
         <TextView
-            android:id="@+id/nameTxt3"
+            android:id="@+id/jobTxt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="24dp"
