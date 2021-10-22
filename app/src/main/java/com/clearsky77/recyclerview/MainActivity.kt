@@ -2,7 +2,10 @@ package com.clearsky77.recyclerview
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.recyclerview.widget.LinearLayoutManager
+import com.clearsky77.recyclerview.adapter.ProfileAdapter
 import com.clearsky77.recyclerview.datas.ProfileData
+import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -11,7 +14,7 @@ class MainActivity : AppCompatActivity() {
 
         val profileList = arrayListOf(
             // 임시 데이터 입력
-            ProfileData(R.drawable.woman, "냥냐루", 6, "식방굽기 달인"),
+            ProfileData(R.drawable.woman, "냥냐루", 6, "식빵굽기 달인"),
             ProfileData(R.drawable.man, "냐냐루", 1, "아깽이"),
             ProfileData(R.drawable.woman, "냥냐냥", 2, "솜펀치 전문가"),
             ProfileData(R.drawable.man, "리터봇", 5, "AI 집사"),
@@ -29,5 +32,10 @@ class MainActivity : AppCompatActivity() {
             ProfileData(R.drawable.man, "김병정", 66, "행인 12"),
             ProfileData(R.drawable.man, "김병정", 66, "행인 12")
         )
+
+        profileListView.layoutManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false) //세로로 리스트 만들자
+        profileListView.setHasFixedSize(true) // 성능 개선 방안
+
+        profileListView.adapter = ProfileAdapter(profileList)
     }
 }
