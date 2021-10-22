@@ -28,5 +28,40 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/man" />
+
+        <TextView
+            android:id="@+id/nameTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:text="냥냐루"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/profileImg"
+            app:layout_constraintTop_toTopOf="@+id/profileImg" />
+
+        <TextView
+            android:id="@+id/nameTxt3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="식빵굽기"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/profileImg"
+            app:layout_constraintStart_toEndOf="@+id/profileImg"
+            app:layout_constraintTop_toBottomOf="@+id/nameTxt" />
+
+        <TextView
+            android:id="@+id/ageTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="6"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/nameTxt"
+            app:layout_constraintStart_toEndOf="@+id/nameTxt"
+            app:layout_constraintTop_toTopOf="@+id/nameTxt" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
