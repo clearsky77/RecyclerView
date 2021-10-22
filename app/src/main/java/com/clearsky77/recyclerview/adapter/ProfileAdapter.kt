@@ -22,7 +22,7 @@ class ProfileAdapter(val profileList: ArrayList<ProfileData>) : RecyclerView.Ada
     }
 
     override fun onBindViewHolder(holder: ProfileAdapter.CustomViewHolder, position: Int) {
-        holder.gender.setImageResource(profileList.get(position).gender) // ???????? 어떻게 남녀구분한다는 거야?
+        holder.gender.setImageResource(profileList.get(position).gender)
         holder.name.text = profileList.get(position).name
         holder.age.text = profileList.get(position).age.toString()
         holder.job.text = profileList.get(position).job
